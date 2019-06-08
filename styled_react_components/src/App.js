@@ -7,17 +7,18 @@ createGlobalStyle`
   margin:0;
 `
 
-
+const Card = styled.div`
+  background-color: red;
+`
 
 const Container = styled.div`
   height: 100vh;
   width: 100%;
   background-color: pink;
+  ${Card} {
+    background-color:blue;
+  }
 `;
-
-const Card = styled.div`
-  background-color: red;
-`
 
 const Button = styled.button`
   border-radius: 30px;
